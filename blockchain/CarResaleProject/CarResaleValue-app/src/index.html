@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Car Resale Value</title>
+	<link href ="css/style.css" rel="stylesheet"/>
+	<script>
+		function checkMetamask() {
+			if (typeof window.ethereum === 'undefined') {
+				window.alert('Please connect to Metamask');
+			}
+		}
+	</script>
+</head>
+<body onload="checkMetamask()">
+    <header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-dark"></nav>
+	</header>
+	<div class="container">
+		<h1>Car Resale Value</h1>
+		<a href="sell.html" class="btn">sell</a>
+		<a href="buy.html" class="btn">buy</a>
+		<a href="edit.html" class="btn">edit</a>
+		<a href="isSold.html" class="btn">Is car sold</a>
+		<a href="viewCars.html" class="btn">View all cars</a>
+		<a href="search.html" class="btn">Search cars</a>
+		<a href="expiration.html" class="btn">Expiration</a>
+		<a href="deleteCar.html" class="btn">Delete Car</a>
+		<footer>
+			<p>NFTs (Non-Fungible Tokens) can be used in the car resale market to create a digital record of a vehicle's ownership history, maintenance records, and other important details. This can help to establish the provenance of a car, which is a key factor in determining its resale value.
+			By using NFTs to create a digital record of a car's ownership history and other details, the car resale market can become more transparent and efficient. This can benefit both buyers and sellers by making it easier to establish the true value of a vehicle. 
+			</p>
+		</footer>
+	</div>
+</body>
+</html>

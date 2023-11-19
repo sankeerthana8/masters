@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Check car is sold</title>
+    <script src="js/web3.min.js"></script>
+  </head>
+  <body>
+    <h1>Check car is sold</h1>
+    <form id="buy-form" action="#" method="post">
+      <label for="tokenId">Token ID:</label>
+      <input type="text" id="tokenId" name="tokenId" required /><br />
+      <button onclick="check()">Check</button>
+    </form>
+    <script type="text/javascript" src="/js/app.js"></script>
+    <script>
+      function check() {
+        event.preventDefault();
+        const tokenId = document.getElementById("tokenId").value;
+        isCarSold(tokenId);
+      }
+    </script>
+  </body>
+</html>

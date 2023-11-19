@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Delete Car Details</title>
+    <script src="js/web3.min.js"></script>
+  </head>
+  <body>
+    <h1>Delete Car Details</h1>
+
+    <label for="tokenId">Token ID:</label>
+    <input type="number" id="tokenId" name="tokenId" required /><br />
+
+    <button onclick="delete_Car()">Delete</button>
+
+    <script type="text/javascript" src="/js/app.js"></script>
+    <script>
+      function delete_Car() {
+        const tokenId = document.getElementById("tokenId").value;
+        deleteCar(tokenId);
+      }
+    </script>
+  </body>
+</html>
